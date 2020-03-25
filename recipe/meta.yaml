@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -51,7 +51,7 @@ test:
 
 about:
   home: http://fabletools.tidyverts.org/
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Provides tools, helpers and data structures for developing models and time series functions for 'fable' and extension packages. These tools support a consistent
     and tidy interface for time series modelling and analysis.
   license_family: GPL3
