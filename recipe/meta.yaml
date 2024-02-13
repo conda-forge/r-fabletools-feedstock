@@ -23,16 +23,19 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-r6
+    - r-distributional >=0.3.0.9000
     - r-dplyr >=1.0.0
-    - r-distributional
     - r-generics
+    - r-ggdist
     - r-ggplot2 >=3.0.0
     - r-lifecycle
     - r-progressr
     - r-rlang >=0.4.5
+    - r-scales
     - r-tibble >=1.4.1
     - r-tidyr >=1.1.0
     - r-tidyselect
@@ -41,13 +44,15 @@ requirements:
   run:
     - r-base
     - r-r6
+    - r-distributional >=0.3.0.9000
     - r-dplyr >=1.0.0
-    - r-distributional
     - r-generics
+    - r-ggdist
     - r-ggplot2 >=3.0.0
     - r-lifecycle
     - r-progressr
     - r-rlang >=0.4.5
+    - r-scales
     - r-tibble >=1.4.1
     - r-tidyr >=1.1.0
     - r-tidyselect
