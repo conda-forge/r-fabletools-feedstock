@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fabletools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fabletools/fabletools_{{ version }}.tar.gz
-  sha256: 025027adc10eb657025535c12ed1ec86ca49d48ea8e1875a7b59ddf539529948
+  sha256: 4662bd4f6258de3f01f9e5ca547e1accdd6293883b34e1088bd7bb0ade20867f
 
 build:
   merge_build_host: true  # [win]
