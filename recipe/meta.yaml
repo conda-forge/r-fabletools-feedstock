@@ -1,6 +1,5 @@
 {% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-fabletools
@@ -13,8 +12,7 @@ source:
   sha256: 3917ced83dc1b32a4b5f1e0a6860ac4b5a61ee9f38aee36396c6da54c5e8468b
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
