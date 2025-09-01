@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fabletools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fabletools/fabletools_{{ version }}.tar.gz
-  sha256: b003b5d02808dabe34a0ef03a3eb2507286e31e0542b0c540a536a53602f80e3
+  sha256: fba553d556482ca9d80687980fc8d96c2638930bb46df8be97f0bc35ef35f0d4
 
 build:
   number: 0
